@@ -362,7 +362,7 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 .navbar-brand .logo-img {
-  height: 52px;
+  height: 60px;
   width: auto;
   transition: transform 0.3s;
 }
@@ -412,8 +412,8 @@ img { max-width: 100%; display: block; }
 }
 .navbar-brand .hero-badge {
   margin: 0;
-  padding: 3px 12px;
-  font-size: 0.72rem;
+  padding: 4px 14px;
+  font-size: 0.78rem;
   font-weight: 600;
   background: rgba(255,107,53,0.1);
   border: 1px solid rgba(255,107,53,0.2);
