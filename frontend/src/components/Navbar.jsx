@@ -50,9 +50,10 @@ export default function Navbar() {
         <div className="container">
         <Link to="/" className="navbar-brand" onClick={closeMobile}>
           <img src="https://www.aapnamakhana.com/assets/images/logo.png" alt="AapnaMakhana" className="logo-img" />
-          <div>
+          <div className="brand-text-wrap">
             <span className="brand-text">AapnaMakhana</span>
             <span className="brand-tagline">Premium Fox Nuts</span>
+            <span className="hero-badge">★ Bihar's Premium Makhana Brand</span>
           </div>
         </Link>
 
@@ -105,12 +106,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-
-      <div className="hero-badge-global">
-        <div className="container">
-          <span className="hero-badge">★ Bihar's Premium Makhana Brand</span>
-        </div>
-      </div>
 
       {mobileOpen && <div className="mobile-overlay" onClick={closeMobile} />}
 

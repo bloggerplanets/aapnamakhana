@@ -348,23 +348,7 @@ img { max-width: 100%; display: block; }
   display: none;
 }
 .hero-badge-global {
-  position: fixed;
-  top: 96px;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  padding: 4px 0;
-  pointer-events: none;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 0;
-}
-.hero-badge-global .container {
-  width: auto;
-}
-.hero-badge-global .hero-badge {
-  pointer-events: auto;
-  margin-left: 80px;
+  display: none;
 }
 .navbar .container {
   display: flex;
@@ -418,6 +402,23 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   margin-top: -2px;
   -webkit-text-fill-color: var(--text-muted);
+}
+.navbar-brand .brand-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.navbar-brand .hero-badge {
+  margin: 0;
+  padding: 2px 10px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  background: rgba(255,107,53,0.1);
+  border: 1px solid rgba(255,107,53,0.2);
+  border-radius: 20px;
+  color: var(--primary-light);
+  width: fit-content;
+  letter-spacing: 0.3px;
 }
 .navbar-nav {
   display: flex;
@@ -1570,6 +1571,7 @@ img { max-width: 100%; display: block; }
   .navbar-brand .logo-img { height: 36px; }
   .navbar-brand .brand-text { font-size: 1.15rem; }
   .navbar-brand .brand-tagline { display: none; }
+  .navbar-brand .hero-badge { display: none; }
   .hero-badge-global { top: 72px; }
   .hero-badge-global .hero-badge { font-size: 0.72rem; padding: 6px 14px; }
   .hero { padding-top: 100px; }
