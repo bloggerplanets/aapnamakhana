@@ -202,6 +202,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   padding: 10px 0;
   position: relative;
+  z-index: 1001;
 }
 .marquee-track {
   display: flex;
@@ -472,7 +473,8 @@ img { max-width: 100%; display: block; }
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 60px;
+  margin-top: 0;
 }
 .hero::before {
   content: '';
