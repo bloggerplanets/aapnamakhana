@@ -17,7 +17,6 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">★ Bihar's Premium Makhana Brand</div>
             <h1 className="hero-title">
               Premium <span className="highlight">Makhana</span><br />from the Heart of Bihar
             </h1>

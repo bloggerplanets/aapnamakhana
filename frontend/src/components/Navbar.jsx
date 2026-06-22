@@ -106,6 +106,12 @@ export default function Navbar() {
         </div>
       </nav>
 
+      <div className="hero-badge-global">
+        <div className="container">
+          <span className="hero-badge">★ Bihar's Premium Makhana Brand</span>
+        </div>
+      </div>
+
       {mobileOpen && <div className="mobile-overlay" onClick={closeMobile} />}
 
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
