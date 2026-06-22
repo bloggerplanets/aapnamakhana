@@ -349,15 +349,22 @@ img { max-width: 100%; display: block; }
 }
 .hero-badge-global {
   position: fixed;
-  top: 84px;
+  top: 96px;
   left: 0;
   right: 0;
   z-index: 999;
   padding: 4px 0;
   pointer-events: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+.hero-badge-global .container {
+  width: auto;
 }
 .hero-badge-global .hero-badge {
   pointer-events: auto;
+  margin-left: 80px;
 }
 .navbar .container {
   display: flex;
