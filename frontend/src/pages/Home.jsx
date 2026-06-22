@@ -202,20 +202,51 @@ export default function Home() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section className="section" style={{ background: 'var(--bg-secondary)' }}>
-        <div className="container text-center">
-          <h2 className="section-title">Certified for Quality</h2>
-          <p className="section-subtitle">Fully licensed and committed to the highest standards</p>
-          <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', marginTop: '32px', flexWrap: 'wrap' }}>
-            <div style={{ padding: '16px 24px', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--border)', fontWeight: '600' }}>
-              ✅ FSSAI Certified
+      <section className="section cert-section">
+        <div className="container">
+          <div className="cert-grid">
+            <div className="cert-left-img">
+              <img src="https://www.aapnamakhana.com/assets/images/Products/Products1.png" alt="Makhana Bowl" />
             </div>
-            <div style={{ padding: '16px 24px', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--border)', fontWeight: '600' }}>
-              ✅ MSME Registered
+            <div className="cert-content">
+              <h2 className="cert-title">Certified for Quality,<br/><span style={{ color: 'var(--primary)' }}>Trusted for Taste</span></h2>
+              <p className="cert-subtitle">Fully licensed and committed to maintaining the highest quality standards in every makhana we deliver.</p>
+              <div className="cert-logos">
+                <div className="cert-logo-card">
+                  <img src="https://www.aapnamakhana.com/assets/images/msme-logo.png" alt="MSME" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
+                  <div className="cert-logo-fallback" style={{ display: 'none' }}>
+                    <span style={{ fontSize: '1.5rem' }}>🏭</span>
+                    <strong>MSME</strong>
+                    <small>Ministry of MSME, Govt. of India</small>
+                  </div>
+                </div>
+                <div className="cert-logo-card">
+                  <img src="https://www.aapnamakhana.com/assets/images/fssai-logo.png" alt="FSSAI" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
+                  <div className="cert-logo-fallback" style={{ display: 'none' }}>
+                    <span style={{ fontSize: '1.5rem' }}>🛡️</span>
+                    <strong>FSSAI</strong>
+                    <small>Lic. No. 10021064000284</small>
+                  </div>
+                </div>
+                <div className="cert-logo-card">
+                  <img src="https://www.aapnamakhana.com/assets/images/make-in-india-logo.png" alt="Make in India" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
+                  <div className="cert-logo-fallback" style={{ display: 'none' }}>
+                    <span style={{ fontSize: '1.5rem' }}>🇮🇳</span>
+                    <strong>Make in India</strong>
+                    <small>Proudly Made in India</small>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div style={{ padding: '16px 24px', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--border)', fontWeight: '600' }}>
-              🇮🇳 Made in India
+            <div className="cert-right-img">
+              <img src="https://www.aapnamakhana.com/assets/images/Products/Products3.png" alt="Premium Makhana Pack" />
             </div>
+          </div>
+          <div className="cert-features-bar">
+            <div className="cert-feature"><span>🌾</span> Premium Quality</div>
+            <div className="cert-feature"><span>🛡️</span> Hygienically Processed</div>
+            <div className="cert-feature"><span>🌿</span> Carefully Sourced</div>
+            <div className="cert-feature"><span>💚</span> Loved by Millions</div>
           </div>
         </div>
       </section>
